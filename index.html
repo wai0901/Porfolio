@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300 400,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92f66e5c84.js" crossorigin="anonymous"></script>
+    <title>Wai Portfolio</title>
+</head>
+<body>
+        
+    <!-- Navbar Section -->
+
+    <div id="menu-show" class="menu-container">
+        <div class="text-menu">
+            <ul class="links-group">
+                <a id="close-menu" href="#s1" title="My web coding portfolio"><li class="links">Web portfolio</li></a>
+                <a href="https://waileung.myportfolio.com/" target="blank" title="My graphic artwork"><li class="links">graphic portfolio</li></a>
+                <a onclick="goToInfo('resume')" href="#" title="My resume"><li class="links">resume</li></a>
+                <a onclick="goToInfo('about')" href="#" title="About me"><li class="links">about me</li></a>
+            </ul>
+            <ul class="info-group">
+                <li class="self-image"></li>
+                <li class="contact contact-name">Wai Leung ( Kent )</li>
+                <li class="contact">waileung0830@gmail.com</li>
+                <li class="contact">626.379.8418</li>
+                <li>
+                    <a href="https://github.com/wai0901" target="blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/wai-kent-leung-72826440/" target="blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/kent_wai_leung/" target="blank"><i class="fab fa-instagram-square"></i></a>
+                </li>
+            </ul>
+        </div> <!-- text-menu -->
+
+        <!-- resume section -->
+
+        <div class="resume-hide info-hide">
+            <div class="info-layout">
+                <iframe src="./img/Resume.pdf"  width="100%" height="100%"></iframe>
+            </div>
+            <div class="back-to-menu">
+                <a class="info-close" onclick="backToMenu('resume')" title="Back to Menu"><i class="fas fa-chevron-circle-left"></i></a>
+            </div>
+        </div>
+
+        <!-- About me section -->
+
+        <div class="about-hide info-hide">
+            <div class="info-layout">
+                <h1>About me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur modi ullam doloribus laboriosam dolores quasi 
+                    culpa beatae nostrum sed non eaque tenetur dolorum, minus ut 
+                    explicabo similique natus fuga libero! Consequuntur modi
+                    Consequuntur modi ullam doloribus laboriosam dolores quasi 
+                    culpa beatae nostrum sed non eaque tenetur dolorum, minus ut 
+                    explicabo similique natus fuga libero! Consequuntur modi
+                    Consequuntur modi ullam doloribus laboriosam dolores quasi 
+                    culpa beatae nostrum sed non eaque tenetur dolorum, minus ut 
+                    explicabo similique natus fuga libero! Consequuntur modi
+                    Consequuntur modi ullam doloribus laboriosam dolores quasi 
+                    culpa beatae nostrum sed non eaque tenetur dolorum, minus ut 
+                    explicabo similique natus fuga libero! Consequuntur modi
+                </p>
+            </div>
+            <div class="back-to-menu">
+                <a class="info-close" onclick="backToMenu('about')" title="Back to Menu"><i class="fas fa-chevron-circle-left"></i></a>
+            </div>
+        </div>
+
+        <!-- burger menu button -->
+        
+        <ul id="burger-menu" class="burger-menu">
+            <li class="burger-line burger-line-one"></li>
+            <li class="burger-line burger-line-two"></li>
+            <li class="burger-line burger-line-three"></li>
+        </ul>
+    </div>
+
+    <!-- Clouds Section -->
+
+    <div class="clouds-container">
+        <div class="clouds">
+            <div class="cloud cloud-one">
+                <svg width="200px" height="200px" href="#">
+                    <image xlink:href="img/cloud.svg" x="0" y="0" width="170px" height="170px"></image>
+                </svg>
+            </div>
+            <div class="cloud cloud-two">
+                <svg width="150px" height="150px" href="#">
+                    <image xlink:href="img/cloud.svg" x="0" y="0" width="120px" height="120px"></image>
+                </svg>
+            </div>
+            <div class="cloud cloud-three">
+                <svg width="100px" height="100px" href="#">
+                    <image xlink:href="img/cloud.svg" x="0" y="0" width="80px" height="80px"></image>
+                </svg>
+            </div>
+            <div class="cloud cloud-four">
+                <svg width="150px" height="150px" href="#">
+                    <image xlink:href="img/cloud.svg" x="0" y="0" width="130px" height="130px"></image>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Airplane -->
+
+    <div class="airplane-container">
+        <!-- <div class="airplane"> -->
+            <svg width="150px" height="150px" href="#">
+                <image xlink:href="img/airplane.svg" x="0" y="0" width="120px" height="120px"></image>
+            </svg>
+        <!-- </div> -->
+    </div>
+
+    <!-- Dots indicator -->
+
+    <div id="indicator-dots" class="up-down-button">
+        <div class="dots">
+            <a href="#s0"><span class="dot port d0" title="Porfolio"><i class="fab fa-product-hunt"></i></span></a>
+            <a href="#s1"><span class="dot dot-style d1"></span></a>
+            <a href="#s2"><span class="dot dot-style d2"></span></a>
+            <a href="#s3"><span class="dot dot-style d3"></span></a>
+            <a href="#s4"><span class="dot dot-style d4"></span></a>
+            <a id="goNext" href="#s1"><span class="dot port dDown" title="Check out my porfolio"><i class="fas fa-chevron-circle-down"></i></span></a>
+        </div>
+    </div>
+
+    <!-- Down arrow -->
+
+    <div class="down-arrow">
+        <span><i class="fas fa-hand-point-down"></i></span>
+    </div>
+
+    <!-- Copyright Section -->
+
+    <div class="copyright-container">
+        <p class="copyright"></p>
+    </div>
+
+    <!-- Title Section -->
+
+    <div id="s0" class="title-container sections" data-dot="d0">
+        <div class="title-group title">
+            <p>const</p>
+            <h1>wai leung</h1>
+        </div>
+        <div class="title-group sub-title">
+            <p><span> = </span> "web dev" <span> + </span> "graphic designer" </p>
+        </div>
+        <div class="title-group sun-container">
+            <svg class="sun" width="100%" height="50%" href="#">
+                <image xlink:href="img/sun.svg" x="30%" y="0" width="130px" height="130px"></image>
+            </svg>
+        </div>
+    </div> <!-- title-container -->
+
+    <!-- Earth Animation Section -->
+
+    <div class="background-one">
+        <div class="earth-container">
+            <svg class="lights" width="100%" height="100%" href="#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.63 318.63"><defs><style id="building-light">.cls-2{fill:#fff;}</style></defs><title>earth_building_light</title>>          
+                <g fill-opacity="0"><circle class="cls-1" cx="159.32" cy="159.32" r="159.31"/></g>
+                <path class="cls-2" d="M428.36,350.31l-10.58-21.75-41.6,20.23a83.52,83.52,0,0,0-9.47-11.61l38.21-46.31-13.05-10.25-2.1,1-10.94,13.29-25.23,31.3A84.89,84.89,0,0,0,234,351.61L231,350l-13.53-4.49-3.17.37-23.54-6.57L182.7,358l-3.8,17.31,42.37,16.38a84.23,84.23,0,0,0,1.66,22.21l-47.2,27.7,30.72,50L253,462.8a84.81,84.81,0,0,0,16.56,10.34l-3.91,11L263,494.69l29.35,7.85L296,490.27,297.9,481a84.88,84.88,0,0,0,89.19-109.52ZM218.65,467s-7,.3-12.64-3.24-6.57-16.2-3.26-20.1,25.84-17.73,25.84-17.73l18,24.12Z" transform="translate(-146.68 -237.18)"/>   
+            </svg>
+        </div>
+        <div class="earth-container">
+            <svg class="earth" width="100%" height="100%" href="#">
+                <image xlink:href="img/earth.svg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+        </div>
+        <div class="earth-container">
+            <svg class="car-tires" width="100%" height="100%" href="#">
+                <image xlink:href="img/carTires.svg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+        </div>
+        <div class="earth-container">
+            <svg class="car-body" width="100%" height="100%" href="#">
+                <image xlink:href="img/carBody.svg" x="0" y="0" width="100%" height="100%"></image>
+            </svg>
+        </div>
+    </div>
+
+    <!-- porfolio Section #1 -->
+
+    <div class="sun-moon-container">
+        <svg class="moon sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div class="background-porfolio">
+        <div id="s1" class="card-container sections" data-dot="d1">
+            <div class="card-back"></div>
+            <div class="card">
+                <div class="porfolio-img card-img"></div>
+            </div>
+            <div class="description">
+                <h2>My Web Porfolio Page</h2>
+                <p><span>Tools used:</span><br />html, css, javascript<br />( pure javascript, no library has been used )</p>
+                <div class="card-link">
+                    <a href="" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #2 -->
+
+    <div class="sun-moon-container">
+        <svg class="sun sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/sun.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div class="background-porfolio">
+        <div id="s2" class="card-container sections" data-dot="d2">
+            <div class="card-back"></div>
+            <div class="card">
+                <div class="weather-app card-img"></div>
+            </div>
+            <div class="description">
+                <h2>Weather Web App</h2>
+                <p><span>Tools used:</span><br />html, css, javascript, react, nodeJS<br /><span>API:</span><br />openweathermap.org</p>
+                <div class="card-link">
+                    <a href="https://weather-webapp.netlify.com/" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="https://github.com/wai0901/weather-webapp" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #3 -->
+
+    <div class="sun-moon-container">
+        <svg class="moon sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div class="background-porfolio">
+        <div id="s3" class="card-container sections" data-dot="d3">
+            <div class="card-back"></div>
+            <div class="card">
+                <div class="kaffa card-img"></div>
+            </div>
+            <div class="description">
+                <h2>Kaffa Website</h2>
+                <p><span>Tools used:</span><br />html, css, javascript, bootstrap, jQuery</p>
+                <div class="card-link">
+                    <a href="https://wai0901.github.io/wonagseged_kaffa/" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="https://github.com/wai0901/wonagseged_kaffa" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #4 -->
+
+    <div class="sun-moon-container">
+        <svg class="sun sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/sun.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div class="background-porfolio">
+        <div id="s4" class="card-container sections" data-dot="d4">
+            <div class="card-back"></div>
+            <div class="card">
+                <div class="card-img"></div>
+            </div>
+            <div class="description">
+                <h2>Portfolio#4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis neque officia iste, optio porro, eum quasi, perferendis consectetur perspiciatis cum dolor tempore? Animi quis quo qui obcaecati vitae fugit tempore?</p>
+                <div class="card-link">
+                    <a href="" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
