@@ -5,9 +5,16 @@ const burgerMenu = document.querySelector("#burger-menu"),
 // Menu control
 
 burgerMenu.addEventListener("click", () => {
-    menuShow.classList.contains("menu-show")?
-    menuShow.classList.remove("menu-show"):
-    menuShow.classList.add("menu-show");
+    if(menuShow.classList.contains("menu-show")) {
+        menuShow.classList.remove("menu-show");
+
+        //has to close the resume and about section all together if it is not close.
+        ClassChange(false, ".text-menu", "text-menu-hide");
+        document.querySelector(".resume-hide").classList.remove("info-show");
+        document.querySelector(".about-hide").classList.remove("info-show");
+    } else {
+        menuShow.classList.add("menu-show");
+    }
 });
 
 closeMenu.addEventListener("click", () => {
