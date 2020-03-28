@@ -101,7 +101,7 @@ let colorObserver = new IntersectionObserver((entries) => {
             })
         } else {
             document.body.style.backgroundColor = "#dff9fb";
-            lights.textContent = ".cls-2{fill:#444;}"
+            lights.textContent = ".cls-2{fill:#1a1d21;}"
             menuLines.forEach(line => {
                 line.style.backgroundColor = "#000";
             })
