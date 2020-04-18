@@ -880,6 +880,10 @@ body {
   overflow: hidden;
 }
 
+.background-porfolio .card-container .card .luke-img {
+  background: url(../img/Luke_website.jpg) no-repeat center center;
+}
+
 .background-porfolio .card-container .card .porfolio-img {
   background: url(../img/portfolio-web.jpg) no-repeat center center;
 }
