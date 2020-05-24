@@ -20,17 +20,32 @@
                 <a onclick="goToInfo('resume')" href="#" title="My resume"><li class="links">resume</li></a>
                 <a onclick="goToInfo('about')" href="#" title="About me"><li class="links">about me</li></a>
             </ul>
-            <ul class="info-group">
-                <li class="self-image"></li>
-                <li class="contact contact-name">Wai Leung ( Kent )</li>
-                <li class="contact">waileung0830@gmail.com</li>
-                <li class="contact">626.379.8418</li>
-                <li>
-                    <a href="https://github.com/wai0901" target="blank"><i class="fab fa-github-square"></i></a>
-                    <a href="https://www.linkedin.com/in/wai-kent-leung-72826440/" target="blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/kent_wai_leung/" target="blank"><i class="fab fa-instagram-square"></i></a>
-                </li>
-            </ul>
+            <div class="contact-group">
+                <ul class="info-group">
+                    <!-- <li class="self-image"></li> -->
+                    <li class="contact contact-name">Wai Leung ( Kent )</li>
+                    <li class="contact">waileung0830@gmail.com</li>
+                    <li class="contact">626.379.8418</li>
+                    <li>
+                        <a href="https://github.com/wai0901" target="blank"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/wai-kent-leung-72826440/" target="blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/kent_wai_leung/" target="blank"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                </ul>
+                <div class="form-group">
+                    <form action="https://formspree.io/xoqkeaoy" method="POST" class="form">
+                        <label class="email-label">Email:
+                            <input class="email-input" type="text" name="_replyto">
+                        </label>
+                        <label class="message-label">Message:
+                            <textarea class="message-input" name="message"></textarea>
+                        </label>
+                        <button class="submit-button" type="submit">Send</button>
+                    </form>
+                </div>
+
+            </div>
+            
         </div> <!-- text-menu -->
 
         <!-- resume section -->
@@ -120,10 +135,12 @@
     <div id="indicator-dots" class="up-down-button">
         <div class="dots">
             <a href="#s0"><span class="dot port d0" title="Porfolio"><i class="fab fa-product-hunt"></i></span></a>
-            <a href="#s1"><span class="dot dot-style d1"></span></a>
-            <a href="#s2"><span class="dot dot-style d2"></span></a>
-            <a href="#s3"><span class="dot dot-style d3"></span></a>
-            <a href="#s4"><span class="dot dot-style d4"></span></a>
+            <a href="#toP1"><span class="dot dot-style d1"></span></a>
+            <a href="#toP2"><span class="dot dot-style d2"></span></a>
+            <a href="#toP3"><span class="dot dot-style d3"></span></a>
+            <a href="#toP4"><span class="dot dot-style d4"></span></a>
+            <a href="#toP5"><span class="dot dot-style d5"></span></a>
+            <a href="#toP6"><span class="dot dot-style d6"></span></a>
             <a id="goNext" href="#s1"><span class="dot port dDown" title="Check out my porfolio"><i class="fas fa-chevron-circle-down"></i></span></a>
         </div>
     </div>
@@ -190,17 +207,20 @@
             <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
         </svg>
     </div>
-    <div class="background-porfolio">
+    <div id="toP1" class="background-porfolio">
         <div id="s1" class="card-container sections" data-dot="d1">
             <div class="card-back"></div>
             <div class="card">
-                <div class="luke-img card-img"></div>
+                <iframe width="460" height="250"  
+                    src="https://www.youtube.com/embed/skC5g5xHqeI" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
             </div>
             <div class="description">
                 <h2>Luke Website</h2>
-                <p><span>Tools used:</span><br />html, css, javascript, React, Redux, React-Router, Thunk, Material-UI<br />Functional shopping cart, Stimulating delay for fetching data from server, Validation control form</p>
+                <p><span>Tools used:</span><br />React, Redux, React-Router, Thunk, Material-UI, Firebase<br />Functional shopping cart by fetching and pushing data from Firebase server, Validation control form</p>
                 <div class="card-link">
-                    <a href="https://epic-bohr-4bf6ad.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="https://luke-42ed0.web.app/" target="_blank"><i class="fas fa-link"></i></a>
                     <a href="https://github.com/wai0901/luke_website" target="_blank"><i class="fab fa-github-square"></i></a>
                 </div>
             </div>
@@ -214,8 +234,63 @@
             <image xlink:href="img/sun.svg" x="0" y="0" width="130px" height="130px"></image>
         </svg>
     </div>
-    <div class="background-porfolio">
+    <div id="toP2" class="background-porfolio">
         <div id="s2" class="card-container sections" data-dot="d2">
+            <div class="card-back"></div>
+            <div class="card">
+                <iframe width="460" height="250" 
+                    src="https://www.youtube.com/embed/XgtrfHOeHM0" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <!-- <div class="porfolio-img card-img"></div> -->
+            </div>
+            <div class="description">
+                <h2>Luke Mobile App Version</h2>
+                <p><span>Tools used:</span><br />React Native Expo, React Navigation, Redux, Firebase<br />Functional shopping cart by fetching and pushing data from Firebase server</p>
+                <div class="card-link">
+                    <!-- <a href="" target="_blank"><i class="fas fa-link"></i></a> -->
+                    <a href="https://github.com/wai0901/Luke-react-native" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #3 -->
+
+    <div class="sun-moon-container">
+        <svg class="moon sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div id="toP3" class="background-porfolio">
+        <div id="s3" class="card-container sections" data-dot="d3">
+            <div class="card-back"></div>
+                <div class="card">
+                    <iframe width="460" height="250" 
+                        src="https://www.youtube.com/embed/p50kCbgTFEk" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            <div class="description">
+                <h2>Covid-19 Tracker</h2>
+                <p><span>Tools used:</span><br />React, Chart.js, Axios<br /><span>API:</span><br />Postman Covid-19 API</p>
+                <div class="card-link">
+                    <a href="" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #4 -->
+
+    <div class="sun-moon-container">
+        <svg class="sun sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div id="toP4" class="background-porfolio">
+        <div id="s4" class="card-container sections" data-dot="d4">
             <div class="card-back"></div>
             <div class="card">
                 <div class="porfolio-img card-img"></div>
@@ -231,15 +306,42 @@
         </div>
     </div>
 
-    <!-- porfolio Section #3 -->
+    <!-- porfolio Section #4 -->
 
     <div class="sun-moon-container">
         <svg class="moon sun-moon" width="130px" height="130px" href="#">
+            <image xlink:href="img/sun.svg" x="0" y="0" width="130px" height="130px"></image>
+        </svg>
+    </div>
+    <div id="toP5" class="background-porfolio">
+        <div id="s5" class="card-container sections" data-dot="d5">
+            <div class="card-back"></div>
+            <div class="card">
+                <iframe width="460" height="250"  
+                    src="https://www.youtube.com/embed/eFk6Hg9HYS8" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="description">
+                <h2>Kaffa Website</h2>
+                <p><span>Tools used:</span><br />html, css, javascript, bootstrap, jQuery</p>
+                <div class="card-link">
+                    <a href="https://wai0901.github.io/wonagseged_kaffa/" target="_blank"><i class="fas fa-link"></i></a>
+                    <a href="https://github.com/wai0901/wonagseged_kaffa" target="_blank"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- porfolio Section #5 -->
+
+    <div class="sun-moon-container">
+        <svg class="sun sun-moon" width="130px" height="130px" href="#">
             <image xlink:href="img/moon.svg" x="0" y="0" width="130px" height="130px"></image>
         </svg>
     </div>
-    <div class="background-porfolio">
-        <div id="s3" class="card-container sections" data-dot="d3">
+    <div id="toP6" class="background-porfolio">
+        <div id="s6" class="card-container sections" data-dot="d6">
             <div class="card-back"></div>
             <div class="card">
                 <div class="weather-app card-img"></div>
@@ -250,30 +352,6 @@
                 <div class="card-link">
                     <a href="https://weather-webapp.netlify.com/" target="_blank"><i class="fas fa-link"></i></a>
                     <a href="https://github.com/wai0901/weather-webapp" target="_blank"><i class="fab fa-github-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- porfolio Section #4 -->
-
-    <div class="sun-moon-container">
-        <svg class="sun sun-moon" width="130px" height="130px" href="#">
-            <image xlink:href="img/sun.svg" x="0" y="0" width="130px" height="130px"></image>
-        </svg>
-    </div>
-    <div class="background-porfolio">
-        <div id="s4" class="card-container sections" data-dot="d4">
-            <div class="card-back"></div>
-            <div class="card">
-                <div class="kaffa card-img"></div>
-            </div>
-            <div class="description">
-                <h2>Kaffa Website</h2>
-                <p><span>Tools used:</span><br />html, css, javascript, bootstrap, jQuery</p>
-                <div class="card-link">
-                    <a href="https://wai0901.github.io/wonagseged_kaffa/" target="_blank"><i class="fas fa-link"></i></a>
-                    <a href="https://github.com/wai0901/wonagseged_kaffa" target="_blank"><i class="fab fa-github-square"></i></a>
                 </div>
             </div>
         </div>

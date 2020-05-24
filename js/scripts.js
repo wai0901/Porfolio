@@ -49,6 +49,7 @@ let observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         // get the data attributes from Title section and the rest of portfolio section
         let dotNum = entry.target.attributes[2].value;
+
         if(entry.intersectionRatio > 0) {
             //for the card fade-in
             entry.target.classList.add("card-container-show");
@@ -80,7 +81,7 @@ function ClassChange (show, classId, classN) {
 
 function nextButton (par, data, id) {
     let num = par.target.getAttribute(data);
-    id.setAttribute("href", "#s" + (Number(num.slice(1)) + 1));
+    id.setAttribute("href", "#toP" + (Number(num.slice(1)) + 1));
 }
 
 // background color change
