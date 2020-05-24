@@ -305,8 +305,20 @@ body {
                 height: 85vh;
                 width: 100%;
             }
-            h1, p {
-                color: $white;
+            .about-me {
+                position: relative;
+                margin: auto;
+                width: 60%;
+                h1 {
+                    margin-top: 20%;
+                }
+                p {
+                    text-indent: 50px;
+                }
+                h1, p {
+                    color: $white;
+                    line-height: 2rem;
+                }
             }
         }
         .back-to-menu {
