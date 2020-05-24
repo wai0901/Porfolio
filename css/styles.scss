@@ -274,12 +274,17 @@ body {
                         width: 110px;
                         margin-top: 15px;
                         font-size: 1rem;
-                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
                         border-radius: 6px;
                         box-shadow: none;
                         border:2px solid $menuColorShow;
                         background-color: #34495e;
                         color: #fff;
+                        cursor: pointer;
+                    }
+                    .submit-button:hover {
+                        background-color: #1f2e3d;
                     }
                 }
             }
